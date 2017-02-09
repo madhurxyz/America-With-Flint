@@ -51,6 +51,9 @@
         <!--FontAwesome-->
         <link rel="stylesheet" href="css/font-awesome.min.css">
 
+        <!--Get jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
         <!--Scripts-->
         <script src="js/modernizr-2.7.1.js"></script>
     
@@ -68,5 +71,34 @@
         <div class="form" id="form">
 
         </div>
+
+
+        <!--Scripts-->
+        <script scr="js/main.js" type="text/javascript"></script>
+
+        <!--Smooth Scrolling Script-->
+        <script>
+            //Allows for smooth scrolling
+            $(document).ready(function(){
+
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+
+                        event.preventDefault();
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+
+                            scrollTop: $(hash).offset().top
+                            }, 800, function(){
+
+                                window.location.hash = hash;
+                                            
+                        });
+                    }
+                });
+            });        
+        </script>
+
     </body>
 </html>
