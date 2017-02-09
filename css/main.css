@@ -6,3 +6,18 @@ html, body {
 	width: 100%;
 	background-color: black;
 }
+.header {
+	height: 800px;
+	background-color: blue;
+}
+.header-content {
+	text-align: center;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.form {
+	height: 800px;
+	background-color: green;
+}
