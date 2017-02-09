@@ -5,10 +5,11 @@
 html, body {
 	width: 100%;
 	background-color: black;
+	font-family: 'Montserrat'
 }
 .header {
 	height: 800px;
-	background-color: blue;
+	background: url('../img/bg1.png') no-repeat center center;
 }
 .header-content {
 	text-align: center;
@@ -16,6 +17,14 @@ html, body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+}
+.title {
+	color: #eee;
+	font-size: 80px;
+}
+.subtitle {
+	color: #888;
+	font-size: 40px;
 }
 .form {
 	height: 800px;
