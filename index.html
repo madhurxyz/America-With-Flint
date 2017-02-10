@@ -59,6 +59,9 @@
     
     </head>
     <body>
+        <div id="preloader">
+            <div id="status"></div>
+        </div>
         <div class="header" id="header">
             <div class="header-content">
                 <h1 class="title">#AmericaWithFlint</h1>
@@ -72,6 +75,7 @@
             <div class="form-content">
                 <i class="fa fa-cog fa-spin fa-4x fa-fw" style="color:#444"></i><br><br>
                 <h3 class="subtitle">Custom Form in the Works<h3>
+                <img class="delay" src="http://deelay.me/3000/http://examplesite.com/image.gif">
             </div>
         </div>
 
@@ -80,7 +84,7 @@
         <script scr="js/main.js" type="text/javascript"></script>
 
         <!--Smooth Scrolling Script-->
-        <script>
+        <script type="text/javascript">
             //Allows for smooth scrolling
             $(document).ready(function(){
 
@@ -101,6 +105,12 @@
                     }
                 });
             });        
+        </script>
+        <script type="text/javascript">
+            var preloader = document.getElementById('preloader');
+            window.addEventListener('load', function(){
+                preloader.style.display = 'none';
+            })
         </script>
 
     </body>
